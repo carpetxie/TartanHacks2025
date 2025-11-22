@@ -1,43 +1,35 @@
-# EcoSpend! An AI-Powered Carbon Footprint Analyzer 🌿
+# EcoSpend! An AI-Powered Carbon Footprint Analyzer
 
-EcoSpend! is a fintech-inspired application created during TartanHacks2025 by two Dartmouth and two CMU students that empowers users to monitor and reduce their carbon footprint by analyzing purchase receipts. Utilizing AI-driven receipt parsing and SQL-based analytics, the platform provides real-time estimates of carbon emissions and calculates offset costs, promoting eco-conscious spending habits.
+EcoSpend! is a fintech-inspired application created during TartanHacks 2025 by a team of Dartmouth and CMU students. It enables users to monitor and reduce their carbon footprint by analyzing purchase receipts. Using AI-driven receipt parsing and SQL-based analytics, the platform provides real-time estimates of carbon emissions and calculates offset costs to support eco-conscious spending.
 
-## Features 🚀
+---
+
+## Features
 
 - **AI-Powered Receipt Analysis**: Upload receipts to extract purchase details using Google's Gemini AI.
-- **Carbon Emission Calculation**: Estimate total CO₂ emissions based on product categories, materials, and transportation impact.
-- **Offset Cost Estimation**: Calculate the cost to neutralize emissions using up-to-date carbon credit pricing.
-- **User Accounts & History Tracking**: Secure login system with password hashing and a history of past carbon scores.
-- **SQL-Based Data Analytics**: Aggregate carbon impact over time, view trends, and compare footprints across users.
-- **Minimalistic Fintech UI**: Built with Streamlit, featuring a forest-inspired design for clarity and ease of use.
-- **Time-Series Data Visualization**: Track carbon footprint trends over time with interactive charts.
+- **Carbon Emission Calculation**: Estimate CO₂ emissions based on product categories, materials, and transportation.
+- **Offset Cost Estimation**: Calculate the projected cost to neutralize emissions using current carbon credit pricing.
+- **User Accounts & History Tracking**: Secure login system with hashed passwords and carbon score history.
+- **SQL-Based Analytics**: Track aggregated carbon impact, trend lines, and user comparisons.
+- **Minimalistic Fintech UI**: Built with Streamlit for a clean and intuitive interface.
+- **Time-Series Visualization**: View carbon footprint trends over time through interactive charts.
 
-## Tech Stack 🛠️
+---
 
-- **Frontend**: Streamlit (Gradio-style UI)
-- **Backend**: Python, OpenAI Gemini API
-- **Database**: SQL (Scalable user authentication, carbon history tracking, and data storage for future analytics)
-- **AI Model**: Google Gemini-1.5 Flash for receipt processing
-- **Data Visualization**: Matplotlib & Pandas for trend analysis
+## Tech Stack
 
-## How to Run the Code ##
+- **Frontend**: Streamlit  
+- **Backend**: Python, Google Gemini API  
+- **Database**: SQL for authentication, history tracking, and scalable analytics  
+- **AI Model**: Google Gemini 1.5 Flash for receipt parsing  
+- **Visualization**: Matplotlib and Pandas  
 
-First, clone the github repository. Then, setup a (virtual) python environment. Then follow the steps below.
+---
 
-## Libraries to Download (Using Python3) 
+## How to Run the Code
+
+First, clone the GitHub repository and set up a Python virtual environment.
+
+### Install Required Libraries
 ```bash
 pip install google-generativeai python-dotenv streamlit pillow matplotlib flask werkzeug
-```
-
-## Run the Streamlit App  
-```bash
-python3 -m streamlit run login.py
-```
-You should see a local URL (something like "http://localhost:8501"). Open the URL in your web browser.
-
-Contact: vtoolsid@andrew.cmu.edu, neil.bhavikatti.28@dartmouth.edu, jx.28@dartmouth.edu, bnajibmo@andrew.cmu.edu
-
-
-
-
-
